@@ -21,5 +21,7 @@ class AdditionTestCase(unittest.TestCase):
 
 
 def addition(*args):
-    a1, a2 = args
-    return a1 + a2
+    total = 0
+    for a in args:
+        total += a
+    return total
