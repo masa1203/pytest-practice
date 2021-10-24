@@ -12,5 +12,6 @@ class AdditionTestCase(unittest.TestCase):
         assert result == 5
 
 
-def addtion(arg1, arg2):
-    return arg1 + arg2
+def addtion(*args):
+    a1, a2 = args
+    return a1 + a2
