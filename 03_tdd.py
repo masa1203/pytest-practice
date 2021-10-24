@@ -6,12 +6,20 @@ class AdditionTestCase(unittest.TestCase):
         # Arrange
         # ...noting
         # Act
-        result = addtion(3, 2)
+        result = addition(3, 2)
 
         # Assert
         assert result == 5
 
+    def test_threeargs(self):
+        result = addition(3, 2, 1)
+        assert result == 6
 
-def addtion(*args):
+    def test_noargs(self):
+        result = addition()
+        assert result == 0
+
+
+def addition(*args):
     a1, a2 = args
     return a1 + a2
