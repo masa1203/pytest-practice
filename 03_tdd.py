@@ -10,3 +10,7 @@ class AdditionTestCase(unittest.TestCase):
 
         # Assert
         assert result == 5
+
+
+def addtion(arg1, arg2):
+    return arg1 + arg2
